@@ -1,0 +1,8 @@
+<resources>
+    <!-- Estilo base de Shoge -->
+    <style name="Widget.Shoge" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">@drawable/selector_input_stroke</item>
+        <item name="hintTextColor">@drawable/selector_hint_color</item>
+        <item name="android:textColorHint">@drawable/selector_hint_color</item>
+    </style>
+</resources>

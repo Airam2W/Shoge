@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Shoge</string>
+    <string name="app_tagline">Shortcut Generator</string>
+
+    <!-- Form labels -->
+    <string name="label_link">LINK</string>
+    <string name="label_icon">ICON</string>
+    <string name="label_navigator">BROWSER</string>
+    <string name="label_name">SHORTCUT NAME</string>
+
+    <!-- Hints -->
+    <string name="hint_link">https://example.com</string>
+    <string name="hint_name">My App</string>
+    <string name="hint_navigator">Select a browser</string>
+
+    <!-- Icon options -->
+    <string name="icon_option_color">Solid Color</string>
+    <string name="icon_option_image">From Gallery</string>
+
+    <!-- Actions -->
+    <string name="btn_generate">Generate Shortcut</string>
+    <string name="btn_pick_color">Pick Color</string>
+    <string name="btn_pick_image">Choose Image</string>
+
+    <!-- Messages -->
+    <string name="msg_no_browsers">No browsers found on this device.</string>
+    <string name="msg_shortcut_created">Shortcut created!</string>
+    <string name="msg_fill_required">Please fill all required fields.</string>
+    <string name="msg_invalid_url">Please enter a valid URL.</string>
+
+    <!-- Generation results -->
+    <string name="msg_dialog_shown">Check your home screen — tap Add to confirm!</string>
+    <string name="msg_pinning_not_supported">Your launcher doesn\'t support shortcut pinning.</string>
+    <string name="msg_generation_error">Something went wrong: %1$s</string>
+</resources>

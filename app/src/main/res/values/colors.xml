@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary orange brand colors -->
+    <color name="orange_primary">#FF6B00</color>
+    <color name="orange_dark">#E05A00</color>
+    <color name="orange_light">#FF8C3A</color>
+    <color name="orange_surface">#FFF3E8</color>
+
+    <!-- Neutrals -->
+    <color name="bg_white">#FFFFFF</color>
+    <color name="bg_surface">#FAFAFA</color>
+    <color name="text_primary">#1A1A1A</color>
+    <color name="text_secondary">#6B7280</color>
+    <color name="text_hint">#AAAAAA</color>
+    <color name="divider">#F0F0F0</color>
+    <color name="card_stroke">#E8E8E8</color>
+
+    <!-- Status -->
+    <color name="success">#22C55E</color>
+    <color name="error">#EF4444</color>
+</resources>

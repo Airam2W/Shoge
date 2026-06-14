@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- A simple "S" lettermark as the launcher icon foreground -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Outer ring -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M54,28 C39.64,28 28,39.64 28,54 C28,68.36 39.64,80 54,80
+            C68.36,80 80,68.36 80,54 C80,39.64 68.36,28 54,28Z
+            M54,32 C66.15,32 76,41.85 76,54 C76,66.15 66.15,76 54,76
+            C41.85,76 32,66.15 32,54 C32,41.85 41.85,32 54,32Z"/>
+
+    <!-- Letter S -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M60,42 L48,42 C45.79,42 44,43.79 44,46 C44,48.21 45.79,50 48,50
+            L60,50 C62.21,50 64,51.79 64,54 L64,62 C64,64.21 62.21,66 60,66
+            L46,66 L46,62 L60,62 L60,54 L48,54 C45.79,54 44,52.21 44,50
+            L44,46 C44,43.79 45.79,42 48,42 Z"/>
+</vector>

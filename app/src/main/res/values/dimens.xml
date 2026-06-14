@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="screen_padding">20dp</dimen>
+    <dimen name="card_padding">20dp</dimen>
+    <dimen name="card_elevation">0dp</dimen>      <!-- flat, minimalist look -->
+    <dimen name="field_spacing">24dp</dimen>
+    <dimen name="section_spacing">32dp</dimen>
+    <dimen name="button_height">56dp</dimen>
+    <dimen name="icon_preview_size">72dp</dimen>
+    <dimen name="label_margin_bottom">8dp</dimen>
+    <dimen name="corner_radius">12dp</dimen>
+    <dimen name="corner_radius_large">20dp</dimen>
+</resources>

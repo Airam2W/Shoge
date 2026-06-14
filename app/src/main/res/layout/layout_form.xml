@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <!-- ══════════════════════════════════════════════════════════ -->
+    <!--  LINK                                                      -->
+    <!-- ══════════════════════════════════════════════════════════ -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_link"
+        style="@style/TextAppearance.Shoge.Label"
+        android:layout_marginBottom="@dimen/label_margin_bottom"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_link"
+        style="@style/Widget.Shoge.TextInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:startIconDrawable="@drawable/ic_link"
+        app:startIconTint="@color/text_hint"
+        app:hintEnabled="false">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_link"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_link"
+            android:inputType="textUri"
+            android:imeOptions="actionNext"
+            android:singleLine="true"
+            android:textSize="15sp"
+            android:textColor="@color/text_primary"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <View style="@style/Widget.Shoge.FormDivider"/>
+
+    <!-- ══════════════════════════════════════════════════════════ -->
+    <!--  SHORTCUT NAME                                             -->
+    <!-- ══════════════════════════════════════════════════════════ -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_name"
+        style="@style/TextAppearance.Shoge.Label"
+        android:layout_marginBottom="@dimen/label_margin_bottom"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_name"
+        style="@style/Widget.Shoge.TextInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:startIconDrawable="@drawable/ic_tag"
+        app:startIconTint="@color/text_hint"
+        app:hintEnabled="false"
+        app:counterEnabled="true"
+        app:counterMaxLength="30">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_name"
+            android:inputType="textCapWords"
+            android:imeOptions="actionDone"
+            android:singleLine="true"
+            android:maxLength="30"
+            android:textSize="15sp"
+            android:textColor="@color/text_primary"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <View style="@style/Widget.Shoge.FormDivider"/>
+
+    <!-- ══════════════════════════════════════════════════════════ -->
+    <!--  BROWSER (Exposed Dropdown)                                -->
+    <!-- ══════════════════════════════════════════════════════════ -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_navigator"
+        style="@style/TextAppearance.Shoge.Label"
+        android:layout_marginBottom="@dimen/label_margin_bottom"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_browser"
+        style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:boxStrokeColor="@drawable/selector_input_stroke"
+        app:boxCornerRadiusTopStart="12dp"
+        app:boxCornerRadiusTopEnd="12dp"
+        app:boxCornerRadiusBottomStart="12dp"
+        app:boxCornerRadiusBottomEnd="12dp"
+        app:startIconDrawable="@drawable/ic_globe"
+        app:startIconTint="@color/text_hint"
+        app:hintEnabled="false">
+
+        <!-- inputType="none" prevents the keyboard from appearing -->
+        <AutoCompleteTextView
+            android:id="@+id/actv_browser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_navigator"
+            android:inputType="none"
+            android:textSize="15sp"
+            android:textColor="@color/text_primary"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <View style="@style/Widget.Shoge.FormDivider"/>
+
+    <!-- ══════════════════════════════════════════════════════════ -->
+    <!--  ICON                                                      -->
+    <!-- ══════════════════════════════════════════════════════════ -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_icon"
+        style="@style/TextAppearance.Shoge.Label"
+        android:layout_marginBottom="@dimen/label_margin_bottom"/>
+
+    <!-- Toggle: Solid Color ↔ From Gallery -->
+    <com.google.android.material.button.MaterialButtonToggleGroup
+        android:id="@+id/toggle_icon_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:singleSelection="true"
+        app:selectionRequired="true">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_toggle_color"
+            style="@style/Widget.Shoge.ToggleButton"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="42dp"
+            android:text="@string/icon_option_color"
+            app:icon="@drawable/ic_palette"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_toggle_image"
+            style="@style/Widget.Shoge.ToggleButton"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="42dp"
+            android:text="@string/icon_option_image"
+            app:icon="@drawable/ic_image_pick"/>
+
+    </com.google.android.material.button.MaterialButtonToggleGroup>
+
+    <!-- Icon preview row: circle + action button -->
+    <LinearLayout
+        android:id="@+id/layout_icon_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <!-- 72dp circle preview -->
+        <FrameLayout
+            android:layout_width="@dimen/icon_preview_size"
+            android:layout_height="@dimen/icon_preview_size">
+
+            <!-- Colored background oval (color mode) -->
+            <View
+                android:id="@+id/view_icon_bg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <!-- Selected image (image mode) — clipped to circle -->
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/iv_icon_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:visibility="gone"
+                app:shapeAppearanceOverlay="@style/ShapeAppearance.Shoge.Circle"/>
+
+            <!-- First letter of shortcut name (color mode overlay) -->
+            <TextView
+                android:id="@+id/tv_icon_initial"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="S"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:textColor="@color/bg_white"/>
+
+        </FrameLayout>
+
+        <!-- Right side: description + action button -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_icon_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tap to choose a color for your icon"
+                android:textSize="13sp"
+                android:textColor="@color/text_secondary"
+                android:lineSpacingMultiplier="1.3"
+                android:layout_marginBottom="10dp"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_icon_action"
+                style="@style/Widget.Material3.Button.OutlinedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_pick_color"
+                android:textColor="@color/orange_primary"
+                android:textSize="13sp"
+                app:strokeColor="@color/orange_primary"
+                app:strokeWidth="1.5dp"
+                app:rippleColor="@color/orange_surface"
+                app:cornerRadius="@dimen/corner_radius"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
